@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ANNUAIRE</title>
+		<script type="text/javascript" src="jquery-2.2.4.js"></script>
+		<link href="bootstrap.min.css" rel="stylesheet">
+		<link rel=Stylesheet type="text/css" href=annuaire.css>
+	</head>
+
+
+
+	<body>
+		<div id="list"> <mark>Phone Contacts</mark></div>
+
+		<div id="recherche"> <!-- pour faire des commentaire-->
+			<input id="rechercher" type="texte" name="contact" class="validate" placeholder="Rechercher...."></input>
+			<button id="type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">OK</button>
+		</div>	
+			
+		<button id="ajout" type="button" class="btn btn-success" data-toggle="modal" data-target="#ajouttt">Ajouter Contact</button>
+		<button id="supp" type="button" class="btn btn-danger" data-toggle="modal" data-target="#supppp">Supprimer Contact</button>
+		<button id="modif" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modifff">Modifier Contact</button>
+
+		<table id="tableau">
+			<thead>
+				<th>NOM</th>
+				<th>PRENOM</th>
+				<th>TEL</th>
+				<th>VILLE</th>
+				<th>AGE</th>
+			</thead>
+		</table>  		
+
+
+<div id="ajout">
+<div class="modal fade" id="ajouttt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">FORMULAIRE NOUVEAU CONTACT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="ajouter">
+      	<input  type="texte" name="contact" class="validate" placeholder="Nom...."></input>
+      	<input  type="texte" name="contact" class="validate" placeholder="Prenom...."></input>
+      	<input  type="texte" name="contact" class="validate" placeholder="Telephone...."></input>
+      	<input  type="texte" name="contact" class="validate" placeholder="Ville...."></input>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">ANNULER</button>
+        <button type="button" class="btn btn-primary">AJOUTER</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div id="supp">
+<div class="modal fade" id="supppp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">FORMULAIRE SUPPRIMER CONTACT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="supprimer">
+      	<input  type="texte" name="contact" class="validate" placeholder="Nom...."></input>
+      	<input  type="texte" name="contact" class="validate" placeholder="Prenom...."></input>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">ANNULER</button>
+        <button type="button" class="btn btn-primary">SUPPRIMER</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<div id="modif">
+<div class="modal fade" id="modifff" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">FORMULAIRE MODIFIER CONTACT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="Enregistrer">
+      	<input  type="texte" name="contact" class="validate" placeholder="Nom...."></input>
+      	<input  type="texte" name="contact" class="validate" placeholder="Prenom...."></input>
+      	<input  type="texte" name="contact" class="validate" placeholder="Telephone...."></input>
+      	<input  type="texte" name="contact" class="validate" placeholder="Ville...."></input>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">ANNULER</button>
+        <button type="button" class="btn btn-primary">ENREGISTER</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+		<script src="bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="annuaire.js"></script>
+	</body>
+</html>
