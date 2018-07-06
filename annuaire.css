@@ -1,0 +1,42 @@
+h1{
+	text-align: center;
+	font-size: 80px;
+	background-color: rgba(255,255,255,0.7);
+	color:purple;
+}
+
+
+#ajout, #supp, #modif{
+	margin-left: 200px;
+}
+
+
+#tableau{
+	margin-top: 60px;
+	background-color: rgba(224,224,235,0.5);
+}
+
+
+#recherche{
+	
+	text-align: center;
+	margin-top: 80px;
+
+}
+
+#rechercher{
+	width: 600px;
+}
+
+
+body{
+	background-image: url("vieuxtel.jpg"); /* pour faire des commentaire*/
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+
+}
+
+#body{
+	font-weight: bold;
+}

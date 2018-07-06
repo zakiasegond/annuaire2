@@ -11,26 +11,30 @@
 
 
 	<body>
-		<div id="list"> <mark>Phone Contacts</mark></div>
+		<div id="list"> <h1>Phone Contacts</h1></div>
 
 		<div id="recherche"> <!-- pour faire des commentaire-->
 			<input id="rechercher" type="texte" name="contact" class="validate" placeholder="Rechercher...."></input>
 			<button id="type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">OK</button>
 		</div>	
 			
-		<button id="ajout" type="button" class="btn btn-success" data-toggle="modal" data-target="#ajouttt">Ajouter Contact</button>
-		<button id="supp" type="button" class="btn btn-danger" data-toggle="modal" data-target="#supppp">Supprimer Contact</button>
-		<button id="modif" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modifff">Modifier Contact</button>
-
-		<table id="tableau">
-			<thead>
+		
+		<table class="table" id="tableau">
+			<thead class="thead-light">
 				<th>NOM</th>
 				<th>PRENOM</th>
 				<th>TEL</th>
 				<th>VILLE</th>
 				<th>AGE</th>
 			</thead>
-		</table>  		
+			<tbody id="body"></tbody>
+		</table>  
+
+
+		<button id="ajout" type="button" class="btn btn-success" data-toggle="modal" data-target="#ajouttt">Ajouter Contact</button>
+		<button id="supp" type="button" class="btn btn-danger" data-toggle="modal" data-target="#supppp">Supprimer Contact</button>
+		<button id="modif" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modifff">Modifier Contact</button>
+		
 
 
 <div id="ajout">
@@ -44,15 +48,16 @@
         </button>
       </div>
       <div id="ajouter">
-      	<input  type="texte" name="contact" class="validate" placeholder="Nom...."></input>
-      	<input  type="texte" name="contact" class="validate" placeholder="Prenom...."></input>
-      	<input  type="texte" name="contact" class="validate" placeholder="Telephone...."></input>
-      	<input  type="texte" name="contact" class="validate" placeholder="Ville...."></input>
+      	<input  id="a1" type="texte" name="contact" class="validate" placeholder="Nom...."></input>
+      	<input  id="a2" type="texte" name="contact" class="validate" placeholder="Prenom...."></input>
+      	<input  id="a3" type="texte" name="contact" class="validate" placeholder="Telephone...."></input>
+      	<input  id="a4" type="texte" name="contact" class="validate" placeholder="Ville...."></input>
+      	<input  id="a5" type="texte" name="contact" class="validate" placeholder="Age...."></input>
         
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">ANNULER</button>
-        <button type="button" class="btn btn-primary">AJOUTER</button>
+        <button id="Ajouter" type="button" class="btn btn-primary">AJOUTER</button>
       </div>
     </div>
   </div>
@@ -77,7 +82,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">ANNULER</button>
-        <button type="button" class="btn btn-primary">SUPPRIMER</button>
+        <button id="Supprimer" type="button" class="btn btn-primary">SUPPRIMER</button>
       </div>
     </div>
   </div>
@@ -106,7 +111,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">ANNULER</button>
-        <button type="button" class="btn btn-primary">ENREGISTER</button>
+        <button id="Enregister" type="button" class="btn btn-primary">ENREGISTER</button>
       </div>
     </div>
   </div>
