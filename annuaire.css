@@ -6,8 +6,17 @@ h1{
 }
 
 
-#ajout, #supp, #modif{
-	margin-left: 200px;
+#supp{
+	margin-left: 10px;
+}
+
+#ajout{
+	margin-left: 70px;
+}
+
+
+#modif{
+	margin-left: 10px;
 }
 
 
@@ -39,4 +48,21 @@ body{
 
 #body{
 	font-weight: bold;
+
+}
+
+td{
+	border-right: 1px solid white;
+	width: 185px;
+	text-align: center;
+}
+
+
+th{
+	text-align: center;
+	width: 185px;
+}
+
+#tableau{
+	width: 1300px;
 }
