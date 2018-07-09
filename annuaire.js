@@ -4,6 +4,11 @@
 
 var repertoire = JSON.parse( localStorage.getItem("objet") );
 
+for (id in repertoire)
+{
+	var personne = repertoire[id];
+}
+
 for (var i = 0; i < repertoire.length ; i++) {
 	$('#body').append("<tr><td>" + repertoire[i].nom + "</td><td>" + repertoire[i].prenom + "</td><td>" + repertoire[i].tel + "</td><td>" + repertoire[i].ville + "</td><td>" + repertoire[i].age + "</td><td><button id='modif' type='button' class='btn btn-success' data-toggle='modal' data-target='#modifff'>M</button></td><td><button id='supp' type='button' class='btn btn-danger' data-toggle='modal' data-target='#supppp'>S</button></td></tr>");
 	
@@ -66,12 +71,21 @@ $("#ok").click(function(){
 
 
 
+$('#supp').click(function()
+{
 
-$('table tbody').delegate('supp', function(){
-	var tableau = $(this).data('tableau');
+	var ligne = $(this).closest("tr");
+	var idTmp = ligne.find(".id").text();
+	var nomTmp= ligne.find(".nom").text();
+	var prenomTmp= ligne.find(".prenom").text();
 
-	supprimer_contact(tableau);
-
+	
+		var repertoire = JSON.parse(window.localStorage.getItem("objet"));
+		repertoire.splice(idTmp, 1);
+		var val = JSON.stringify(repertoire);
+		window.localStorage.setItem("objet", val);
+		location.href="annuaire.html";
+	
 });
 
 
